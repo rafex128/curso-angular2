@@ -1,5 +1,6 @@
 /node_modules
-/assets
 /typings
 *.js
+*.map
 *.log
+.idea
