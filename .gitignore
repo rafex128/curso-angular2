@@ -1,6 +1,7 @@
 /node_modules
 /typings
-*.js
+app/*.js
 *.map
 *.log
 .idea
+.DS_Store

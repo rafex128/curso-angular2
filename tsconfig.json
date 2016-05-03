@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "es5",
     "module": "system",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -21,9 +21,5 @@
   ],
   "atom": {
     "rewriteTsconfig": true
-  },
-  "files": [
-    "./app/boot.ts",
-    "./app/components/app.component.ts"
-  ]
+  }
 }
