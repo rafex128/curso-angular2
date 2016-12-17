@@ -23,7 +23,9 @@ CursoComponent = __decorate([
         moduleId: module.id,
         selector: 'cursos-lista',
         templateUrl: 'cursos.component.html',
-        providers: [curso_service_1.CursoService]
+        providers: [
+            curso_service_1.CursoService
+        ]
     }),
     __metadata("design:paramtypes", [curso_service_1.CursoService])
 ], CursoComponent);

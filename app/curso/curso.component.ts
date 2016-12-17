@@ -6,7 +6,9 @@ import { CursoService } from './curso.service';
   moduleId: module.id,
   selector: 'cursos-lista',
   templateUrl: 'cursos.component.html',
-  providers: [CursoService]
+  providers: [
+    CursoService
+  ]
 })
 
 export class CursoComponent {
