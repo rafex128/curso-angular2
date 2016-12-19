@@ -8,26 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var curso_service_1 = require("./curso.service");
+var core_1 = require('@angular/core');
+var curso_service_1 = require('./curso.service');
 var CursoComponent = (function () {
     function CursoComponent(cursoService) {
         this.nome = 'Rafael';
         this.cursos = "";
         this.cursos = cursoService.getCursos();
     }
+    CursoComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'cursos-lista',
+            templateUrl: 'cursos.component.html',
+            providers: [
+                curso_service_1.CursoService
+            ]
+        }), 
+        __metadata('design:paramtypes', [curso_service_1.CursoService])
+    ], CursoComponent);
     return CursoComponent;
 }());
-CursoComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'cursos-lista',
-        templateUrl: 'cursos.component.html',
-        providers: [
-            curso_service_1.CursoService
-        ]
-    }),
-    __metadata("design:paramtypes", [curso_service_1.CursoService])
-], CursoComponent);
 exports.CursoComponent = CursoComponent;
 //# sourceMappingURL=curso.component.js.map
