@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var DataBindingComponent = (function () {
     function DataBindingComponent() {
+        this.url = "http://www.google.com.br";
     }
     return DataBindingComponent;
 }());
