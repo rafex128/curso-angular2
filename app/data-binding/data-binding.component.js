@@ -12,6 +12,7 @@ var core_1 = require("@angular/core");
 var DataBindingComponent = (function () {
     function DataBindingComponent() {
         this.url = "http://www.google.com.br";
+        this.target = "_blank";
     }
     return DataBindingComponent;
 }());

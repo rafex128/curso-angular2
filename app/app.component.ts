@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { MeuPrimeiroComponent } from './primeiro/meu-primeiro.component';
 import { CursoComponent } from './curso/curso.component';
-import { DataBindingComponent } from './data-binding/data-binding.component'
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @Component({
   selector: 'my-app',
