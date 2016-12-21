@@ -8,18 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var CursoService = (function () {
-    function CursoService() {
+var core_1 = require("@angular/core");
+var DataBindingComponent = (function () {
+    function DataBindingComponent() {
+        this.url = "http://www.google.com.br";
+        this.target = "_blank";
     }
-    CursoService.prototype.getCursos = function () {
-        return ['Angular2', 'Ionic2', 'VanillaJs', 'Ruby'];
-    };
-    CursoService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], CursoService);
-    return CursoService;
+    return DataBindingComponent;
 }());
-exports.CursoService = CursoService;
-//# sourceMappingURL=curso.service.js.map
+DataBindingComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'data-binding',
+        templateUrl: 'data-binding.component.html',
+    }),
+    __metadata("design:paramtypes", [])
+], DataBindingComponent);
+exports.DataBindingComponent = DataBindingComponent;
+//# sourceMappingURL=data-binding.component.js.map

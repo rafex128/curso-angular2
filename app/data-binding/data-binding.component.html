@@ -1,0 +1,31 @@
+<article class="">
+  <p>
+    Interpolation <a href="{{ url }}"> {{ url }} </a>
+  </p>
+
+  <p>
+    Property binding <a [href]="url" [attr.target]="target"> {{ url }} </a>
+  </p>
+</article>
+
+<article>
+  <h3>Style binding</h3>
+  <div>
+    <select #class (change)="0">
+      <option value="alert-success">Success</option>
+      <option value="alert-info">Info</option>
+      <option value="alert-warning">Warning</option>
+      <option value="alert-danger">Danger</option>
+    </select>
+  </div>
+  <br>
+
+  <div class="alert {{ class.value }}" role="alert" >
+    Copy selected alert
+  </div>
+
+  <div class="alert" role="alert" [class.alert-success]="class.value == 'alert-success'">Success</div>
+  <div class="alert" role="alert" [class.alert-info]="class.value == 'alert-info'">Info</div>
+  <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">Warning</div>
+  <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">Danger</div>
+</article>
