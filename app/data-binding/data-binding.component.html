@@ -29,3 +29,11 @@
   <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">Warning</div>
   <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">Danger</div>
 </article>
+
+<article>
+  <h3>Two Way binding</h3>
+
+  <input type="text" [(ngModel)]="name">
+  <input type="text" [(ngModel)]="name">
+
+</article>

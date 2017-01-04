@@ -11,4 +11,6 @@ export class DataBindingComponent {
   url: any = "http://www.google.com.br"
 
   target: any = "_blank"
+
+  name: string = "Rafael"
 }
