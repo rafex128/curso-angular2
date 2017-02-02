@@ -9,24 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var input_property_component_1 = require("./input-property.component");
-var DataBindingComponent = (function () {
-    function DataBindingComponent() {
-        this.url = "http://www.google.com.br";
-        this.target = "_blank";
-        this.name = "Rafael";
-        this.estagioCurso = "Segundo";
+var InputPropertyComponent = (function () {
+    function InputPropertyComponent() {
+        //@Input('nome')
+        this.nomeCurso = "";
     }
-    return DataBindingComponent;
+    return InputPropertyComponent;
 }());
-DataBindingComponent = __decorate([
+InputPropertyComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'data-binding',
-        templateUrl: 'data-binding.component.html',
-        directives: [input_property_component_1.InputPropertyComponent]
+        selector: 'curso',
+        template: '{{ nomeCurso }} {{ estagioCurso }}',
+        inputs: ['nomeCurso:nome', 'estagioCurso:estagio']
     }),
     __metadata("design:paramtypes", [])
-], DataBindingComponent);
-exports.DataBindingComponent = DataBindingComponent;
-//# sourceMappingURL=data-binding.component.js.map
+], InputPropertyComponent);
+exports.InputPropertyComponent = InputPropertyComponent;
+//# sourceMappingURL=input-property.component.js.map
